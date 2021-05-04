@@ -1,71 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Artscape</title>
+  <head>
+    <title>Artiscape</title>
+  </head>
+  <body>
+    <div id="Header">
+      <h1>Artiscape</h1>
         <nav>
-            <ul>
-                <h1>Artscape</h1>
-                <li>Home</li>
-                <li>Order</li>
-                <li>Schedule</li>
-                <li>About Us</li>
-            </ul>
+	  <ul>
+	    <li>Home</li>
+	    <li>Products</li>
+	    <li>Order</li>
+	    <li>Schedule</li>
+	    <li>Contact</li>
+	  </ul>
         </nav>
-    </head>
-    <body>
-    </body>
-    <footer>
-       <p>© 2021 Artscape</p>
-    </footer>
+    </div>
+    <main>
+      <h2>Who we are</h2>
+      <article>
+        <p id="abUs">We at Artiscape all share a common passion: Art.<br><br>Every member of our family has a burning desire to help others rediscover the limitless imagination that we are all born with but is stripped away in the name of mathmatical formulas and conformity.<br><br>We believe that whether it be brush to canvas or pencil to paper, Art is the soul expressing itself which is why with a little practice everybody can show their inner beauty.<br><br>Want to learn how you can let yourself free?<br><br>Give us a call or come see us in store!</p>
+      </article>
+      <h2>What we offer</h2>
+      <ul>
+        <li>Painting Tools</li>
+        <li>Paints</li>
+        <li>Drawing Tools</li>
+        <li>Books</li>
+        <li>Canvases</li>
+        <li>Classes</li>
+      </ul>
+    </main>
+  </body>
+  <footer>
+  </footer>
 </html>
 
 <style>
-    * {
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }
-    nav{
-        background-color: #7BB5E2;
-        color: white;
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-    nav ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-around;
-    }
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Indie Flower";
+  }
 
-    li{
-	text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-	padding-top: 10px;
-	width: 100%;
-	border: #6699cc inset 2px;
-    }
-    li:hover{
-        background-color: #EDEAE0;
-    }
-    h1 {
-        background-color: #6A9FC7; 
-        padding: 10px 25px;
-        font-size: 50px;
-        color: white;
-        letter-spacing: 10px;
-    }
-    body {
-        background-color: #D4E9F8;
-        font-size: 20px;
-    }
-    footer {
-        background-color: #6A9FC7; 
-        position: relative;
-	clear: both;
-	margin-top: 100%;
-        padding: 25px;
-        font-size: 16px;
-    }
+  #Header {
+    margin: auto;
+    position: relative;
+    text-align: left;
+    width: 1024px; 
+    height: 200px;
+    background-color: #FF9666;
+    color: #FFE166;
+  }
+
+  #Header h1 {
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 0 3px black;
+    font-size: 75px;
+    letter-spacing: 10px;
+  }
+
+  main {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 3px white;
+    width: 1024px;
+    height: 800px;
+    background-color: #FFE166;
+  }
+
+  main h2{
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff9933;
+    background-color: lightyellow;
+  }
+
+  main ul {
+    width: 85%;
+    list-style: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  main li {
+    font-size: 30px;
+    padding: 25px 0;
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    text-shadow: 0 1px white;
+    color: #ff9933;
+    font-weight: bold;
+  }
+
+   #abUs {
+    position: relative;
+    margin: auto;
+    width: 85%;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-shadow: 0 1px white;
+    line-height: 1.15;
+    padding: 25px 10px;
+    margin-top: 10px;
+    color: #ff9933;
+  }
+
+  nav {
+    width: 1025px;
+    overflow: auto;
+    margin: auto
+    position: relative;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 20px 0;
+    display: inline-block;
+  }
+
+  nav li {
+    font-size: 30px;
+    padding: 10px 0;
+    width: 20%;
+    float: left;
+    text-align: center;
+    text-shadow: 0 2px black;
+  }
+
+  nav li:hover {
+    background-color: lightyellow;
+    color: #FF9666;
+  }
 </style>
